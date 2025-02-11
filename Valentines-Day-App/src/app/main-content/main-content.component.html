@@ -1,0 +1,14 @@
+<div class="main-content">
+    <div class="question">
+        <h1>Will you be my valentine?</h1>
+    </div>
+    <img src="white-cat.gif" alt="">
+    <div class="buttons">
+        <button id=yes-button (click)="onYesClick()" [ngStyle]="{'top.px': yesButtonTop, 'left.px': yesButtonLeft}">Yes</button> 
+        <button id=no-button (click)="onNoClick()" [ngStyle]="{'top.px': noButtonTop, 'left.px': noButtonLeft, 'transform': 'scale(' + noButtonScale + ')'}">{{ noButtonText }}</button>
+    </div>
+</div>
+<!-- <div class="buttonDiv">
+    <button (click)="onYesClick()">Yes</button>
+    <button id=noButton (click)="onNoClick()" [ngStyle]="{'top.px': noButtonTop, 'left.px': noButtonLeft, 'transform': noButtonTransform}">No</button>
+</div> -->

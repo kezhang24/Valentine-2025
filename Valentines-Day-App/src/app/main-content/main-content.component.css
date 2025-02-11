@@ -1,0 +1,34 @@
+.main-content {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Pacifico', cursive; /* Add this line */
+}
+
+button {
+    position: absolute;
+    transition: top 0.5s, left 0.5s, transform 0.5s;
+}
+
+.yes-button {
+    background-color: #ffb6c1; /* Light pink */
+    color: white;
+  }
+  
+.no-button {
+    background-color: #ff6961; /* Light red */
+    color: white;
+}
+
+.button:hover {
+    background-color: #ff8c94; /* Slightly darker pink/red */
+  }
+
+@media (max-width: 600px) {
+    .main-content {
+      padding: 10px;
+    }
+}
